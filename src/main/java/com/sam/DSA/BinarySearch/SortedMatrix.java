@@ -23,7 +23,7 @@ public class SortedMatrix {
         int rEnd = rows - 1;
         int cMid = cols / 2;
         //run the loop till 2 rows are remaining
-        while (rStart < (rEnd - 1)) {
+        while (rStart < (rEnd -1)) {
             int mid = rStart - (rEnd - rStart) / 2;
             if (matrix[mid][cMid] == target) {
                 return new int[]{mid, cMid};
